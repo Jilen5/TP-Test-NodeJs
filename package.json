@@ -1,0 +1,23 @@
+{
+  "name": "tp-test-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jilen5/TP-Test-NodeJs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jilen5/TP-Test-NodeJs/issues"
+  },
+  "homepage": "https://github.com/Jilen5/TP-Test-NodeJs#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
