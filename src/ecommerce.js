@@ -34,7 +34,7 @@ function payBasket(userAccount, basket) {
     } 
 }
 
-moodule.exports = {
+module.exports = {
     Basket,
     addToBasket,
     removeFromBasket,
