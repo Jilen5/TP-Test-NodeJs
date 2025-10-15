@@ -28,3 +28,11 @@ test('On constate qu il est possible de factoriser les tests unitaires précéde
     expect(basket.totalPrice).toBe(0);
     }
 );
+
+test('Développer un test unitaire qui teste complètement la fonction transactionAllowed(). Chaque branche de la condition devra être vérifiée', () => {
+    const userAccount1 = {balance: 100};
+    const userAccount2 = {balance: 30};
+    expect(transactionAllowed(userAccount1, 50)).toBe(true);
+    expect(transactionAllowed(userAccount2, 50)).toBe(false);
+    }
+);
