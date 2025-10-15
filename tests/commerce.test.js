@@ -36,3 +36,15 @@ test('Développer un test unitaire qui teste complètement la fonction transacti
     expect(transactionAllowed(userAccount2, 50)).toBe(false);
     }
 );
+
+test('Écrire un test fonctionnel complet pour vérifier le bon déroulement d un paiement. ', () => {
+    const basket = new Basket();
+    const item1 = {name: 'Produit A', price: 50};
+    const item2 = {name: 'Produit B', price: 30};
+    addToBasket(basket, item1);
+    addToBasket(basket, item2);
+    const userAccount = {balance: 100};
+    payBasket(userAccount, basket);
+    expect(userAccount.balance).toBe(20);
+    }
+);
