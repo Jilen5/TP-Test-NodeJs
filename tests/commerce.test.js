@@ -18,3 +18,13 @@ test('Développer un test unitaire qui supprime un produit du panier et vérifie
     expect(basket.totalPrice).toBe(30);
     }
 );
+
+test('On constate qu il est possible de factoriser les tests unitaires précédents. Donner un test unitaire unique qui vérifie successivement : - l ajout d un produit au panier, - puis sa suppression, dans une même fonction.', () => {
+    const basket = new Basket();
+    const item = {name: 'Produit A', price: 50};
+    addToBasket(basket, item);
+    expect(basket.totalPrice).toBe(50);
+    removeFromBasket(basket, item);
+    expect(basket.totalPrice).toBe(0);
+    }
+);
